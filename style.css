@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --color-primary: #FFFF;
+    --color-secondary: #FF5B50;
+    --color-terc: #5A5757;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    color: var(--color-primary);
+}
+
+
+
+h1 {
+
+    font-style: bold;
+    font-size: 4rem;
+    line-height: 4.9rem;
+}
+
+h1 span,
+h2 span,
+p3 span,
+h5 span, p4{
+    color: var(--color-secondary);
+
+}
+
+main {
+    background-image: url(assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    padding: 5.7rem 8rem 9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menus {
+    display: flex;
+    gap: 6rem;
+
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.menus:hover {
+    cursor: pointer;
+}
+
+button {
+
+    width: 23rem;
+    height: 5rem;
+
+    background-color: var(--color-primary);
+
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+button span {
+    font-style: bold;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+.container {
+    padding: 0 8rem 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    width: 59rem;
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 6rem;
+
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+.text-and-group p:first-child {
+    width: 40rem;
+    padding-bottom: 5.5rem;
+
+}
+
+.group {
+    display: flex;
+
+}
+
+.group p {
+    padding-top: 4.6rem;
+}
+
+.group p span {
+    font-weight: 700;
+}
+
+.gallery {
+    padding-left: 30rem;
+
+    width: 160rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    row-gap: 6rem;
+
+
+
+
+}
+
+.gallery img {
+    border: 1px solid #FFFFFF;
+}
+
+.main-2,
+.main-3,
+.main-4 {
+    background-color: #000000;
+}
+
+.main-2 {
+    display: flex;
+    position: relative;
+
+}
+
+.main-2 img {
+    width: 100%;
+
+    border-bottom: 1px solid #5A5757;
+
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    gap: 12rem;
+
+    padding: 7rem 8rem 16rem;
+
+}
+
+.numbers {
+    padding: 13rem 10rem;
+    border-right: 1px solid #5A5757;
+    border-bottom: 1px solid #5A5757;
+
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 6rem;
+    padding-bottom: 6rem;
+
+
+
+}
+
+p1 {
+    color: var(--color-terc);
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+.art {
+    position: absolute;
+    bottom: 54rem;
+    left: 12rem;
+
+}
+
+.money {
+    position: absolute;
+    bottom: 41rem;
+    left: 11rem;
+}
+
+.artist {
+    position: absolute;
+    bottom: 28rem;
+    left: 11rem;
+}
+
+.vinte {
+    padding-left: 2rem;
+}
+
+p3 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--color-primary);
+    text-align: left;
+
+}
+
+.main-3 h2 {
+    padding-top: 15rem;
+    margin-left: 8.7rem;
+}
+
+.main-3 .photos {
+    padding-bottom: 5rem;
+}
+
+h4,h5 {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3.7rem;
+
+}
+
+.astronauta {
+    padding: 15rem 25rem 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block1 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.astr {
+    display: flex;
+    gap: 9rem;
+    padding-bottom: 2rem;
+}
+
+.name {
+    display: flex;
+    gap: 6rem;
+    padding-bottom: 4rem;
+}
+
+p4{
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+.line {
+    height: 70rem;
+    border: 1px solid #5A5757;
+}
+
+.main-4 h2 {
+    margin-left: 68rem;
+}
+
+.thebest {
+    padding: 15rem 25rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 10rem;
+}
+
+.person {
+    width: 35rem;
+    height: 15rem;
+    background-color: #252525;
+    padding: 2.5rem 3.2rem;
+
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: var(--color-primary);
+
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.personName {
+    display: flex;
+    flex-direction: column;
+}
+
+.view {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding-bottom: 14rem;
+}
+
+footer {
+    background-color: #2b2929;
+}
+
+.titleFooter {
+    padding: 8.2rem 8.2rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #5A5757;
+}
+
+.arrowBlack {
+    background-color: var(--color-secondary);
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+
+}
+
+h5 {
+
+    width: 35rem;
+
+    padding-bottom: 2.5rem;
+    color: var(--color-primary);
+}
+
+.middleFooter {
+    display: flex;
+    gap: 20rem;
+    border-bottom: 1px solid #5A5757;
+}
+
+.news {
+    padding: 6.7rem 8rem 8.2rem;
+    border-right: 1px solid #5A5757;
+
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
+
+input[type="email"] {
+    background-color: #0D0D0D;
+    border: none;
+
+    width: 28rem;
+    height: 6rem;
+
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.4rem;
+
+    color: #5A5757;
+
+    padding-left: 2rem;
+}
+
+input[type="submit"] {
+    background-color: var(--color-primary);
+    border: none;
+
+    width: 12rem;
+    height: 6rem;
+
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.4rem;
+
+    color: #000000;
+}
+
+p5 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-primary);
+}
+
+.contact {
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    row-gap: 1.5rem;
+    column-gap: 20rem;
+    align-content: center;
+
+
+}
+
+.end {
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 7rem 8.4rem 6rem;
+
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.4rem;
+
+    color: #5A5757
+}
+
+.app{
+    display: flex;
+    gap: 5rem;
+}
