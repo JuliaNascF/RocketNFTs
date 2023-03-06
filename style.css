@@ -14,6 +14,8 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    width: 100%;
+
 
 }
 
@@ -37,7 +39,8 @@ h1 {
 h1 span,
 h2 span,
 p3 span,
-h5 span, p4{
+h5 span,
+p4 {
     color: var(--color-secondary);
 
 }
@@ -53,6 +56,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header .menu {
+    display: none;
 }
 
 .menus {
@@ -102,11 +109,15 @@ button:hover {
 }
 
 h2 {
-    width: 59rem;
+  
     font-weight: 700;
     font-size: 5rem;
     line-height: 6rem;
 
+}
+
+main h2{
+    width: 58rem;
 }
 
 p {
@@ -135,16 +146,11 @@ p {
 }
 
 .gallery {
-    padding-left: 30rem;
 
-    width: 160rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
+    justify-items: center;
     row-gap: 6rem;
-
-
-
 
 }
 
@@ -160,7 +166,7 @@ p {
 
 .main-2 {
     display: flex;
-    position: relative;
+
 
 }
 
@@ -191,7 +197,7 @@ h3 {
     font-weight: 600;
     font-size: 5rem;
     line-height: 6rem;
-    padding-bottom: 6rem;
+
 
 
 
@@ -204,24 +210,17 @@ p1 {
     line-height: 2.4rem;
 }
 
-.art {
-    position: absolute;
-    bottom: 54rem;
-    left: 12rem;
-
-}
-
-.money {
-    position: absolute;
-    bottom: 41rem;
-    left: 11rem;
-}
-
+.art,
+.money,
 .artist {
-    position: absolute;
-    bottom: 28rem;
-    left: 11rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 6rem;
+
 }
+
 
 .vinte {
     padding-left: 2rem;
@@ -245,7 +244,8 @@ p3 {
     padding-bottom: 5rem;
 }
 
-h4,h5 {
+h4,
+h5 {
     font-weight: 500;
     font-size: 3rem;
     line-height: 3.7rem;
@@ -258,11 +258,7 @@ h4,h5 {
     justify-content: space-between;
 }
 
-.block1 {
-    display: flex;
-    flex-direction: column;
 
-}
 
 .astr {
     display: flex;
@@ -276,7 +272,7 @@ h4,h5 {
     padding-bottom: 4rem;
 }
 
-p4{
+p4 {
     font-size: 2rem;
     line-height: 2.4rem;
 }
@@ -286,12 +282,18 @@ p4{
     border: 1px solid #5A5757;
 }
 
-.main-4 h2 {
-    margin-left: 68rem;
+.main-4 .artistsBest {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10rem;
 }
 
 .thebest {
-    padding: 15rem 25rem 10rem;
+
+    padding-top: 15rem;
+    padding-bottom: 10rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -434,6 +436,9 @@ p5 {
 
     padding: 7rem 8.4rem 6rem;
 
+}
+
+.end p{
     font-weight: 400;
     font-size: 2rem;
     line-height: 2.4rem;
@@ -441,7 +446,237 @@ p5 {
     color: #5A5757
 }
 
-.app{
+.app {
     display: flex;
     gap: 5rem;
+}
+
+@media (max-width: 1500px) {
+
+    .text-and-group p:first-child {
+        width: 30rem;
+
+    }
+
+    .contact {
+        column-gap: 10rem;
+    }
+}
+
+@media (max-width: 1250px) {
+
+    .gallery .gallery-1,
+    .gallery-8 {
+        display: none;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+
+    .astronauta {
+        padding: 15rem 20rem 10rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .person {
+        width: 30rem;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+
+        align-content: center;
+
+    }
+}
+
+@media (max-width: 1050px) {
+
+
+
+    header .menu {
+
+        display: flex;
+        justify-content: space-between;
+        width: 3rem;
+    }
+
+    header button {
+        display: none;
+    }
+
+    .menus {
+        display: none;
+    }
+
+    .text-and-group p:first-child {
+        width: 50rem;
+        font-weight: 400;
+        font-size: 2rem;
+        text-align: center;
+
+    }
+
+    .group {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        padding-bottom: 4rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+
+    }
+
+    .main-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .numbers {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .astronauta {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .astronauta .line {
+        display: none;
+    }
+
+    .thebest {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .middleFooter {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .news {
+        border-right: none;
+        border-bottom: 1px solid #5A5757;
+    }
+
+    .contact {
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .text-and-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-and-group p:first-child {
+        width: 20rem;
+
+        font-weight: 400;
+        font-size: 2rem;
+        text-align: center;
+
+    
+
+    }
+
+    .container h2 {
+
+        font-size: 4rem;
+        width: 30rem;
+        padding-bottom: 2rem;
+       
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .main-3 h2{
+        width: 30rem;
+        font-size: 4rem;
+        
+      
+    }
+
+    .numbers{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .astronauta{
+
+        padding: 15rem 18rem 10rem;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        
+    }
+
+    .main-4 h2{
+      
+        padding-top: 5rem;
+        padding-right: 5rem;
+       
+    }
+
+    .news h5{
+     padding-left: 2rem;
+    }
+
+    input[type="email"] {
+       width: 20rem;
+    }
+    .news {
+        padding: 6.7rem 2rem 8.2rem;;
+        border-bottom: none
+    }
+
+    .contact{
+        padding-left: 4rem;
+        gap: 3rem;
+        border-top: 1px solid #5A5757;
+    }
+
+
+    .end p{
+        display: none;
+    }
+
+  
 }
